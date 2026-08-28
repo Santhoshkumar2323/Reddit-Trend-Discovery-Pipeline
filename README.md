@@ -6,8 +6,6 @@ Clusters posts from any set of subreddits into topics by year, without manual la
 
 ## The Problem
 
-## The Problem
-
 A subreddit accumulates far more posts than anyone can read manually, and buried in that volume is a real signal: what a community keeps asking about, how much of the discussion each topic actually takes up, and how that changes year to year. Reading through it by hand doesn't scale, and doing it by hand also doesn't produce a consistent, comparable count across years.
 
 This pipeline takes raw subreddit posts, filters out low-engagement noise, groups the rest into topics automatically, and reports topic volume per year — turning an unreadable pile of posts into a ranked, comparable view of what a community actually talks about, without any manual reading or manual tagging.
