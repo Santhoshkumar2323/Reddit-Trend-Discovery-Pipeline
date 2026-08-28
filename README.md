@@ -4,19 +4,29 @@ Clusters posts from any set of subreddits into topics by year, without manual la
 
 ---
 
+
+
 ## Output
 
 The pipeline was first built and run end-to-end on fitness subreddits (`Fitness_India`, `gym`, `Gainit`, etc.) across 2024–2026, producing 114/477/772 filtered posts per year with interpretable clusters (e.g. diet/calorie-tracking as the largest topic in all three years).
 
 ![Dashboard topic view — 2026 fitness run](screenshots/dashboard_2026.png)
 
+
 Terminal audit output for the same run:
 
 ![2024 audit](screenshots/audit_2024.png)
+
 ![2025 audit](screenshots/audit_2025.png)
+
 ![2026 audit](screenshots/audit_2026.png)
 
 A career-subreddit run is the next one planned, now that `domain_name` prevents it from merging into the fitness data.
+
+
+
+
+## The Problem
 
 
 A subreddit accumulates far more posts than anyone can read manually, and buried in that volume is a real signal: what a community keeps asking about, how much of the discussion each topic actually takes up, and how that changes year to year. Reading through it by hand doesn't scale, and doing it by hand also doesn't produce a consistent, comparable count across years.
@@ -60,9 +70,6 @@ No code changes required for a new domain. Code changes are only needed for genu
 - **HTML dashboard content isn't escaped** — post titles/bodies are injected into HTML via f-strings with no `html.escape()`. Not a problem for local viewing, but a real risk if this dashboard is ever served over HTTP, since Reddit post text is uncontrolled input.
 - **Scraper error handling is broad** — a rate limit, a bad post, and a genuine bug are all caught by the same `except Exception`, so the terminal can't currently distinguish "this subreddit is fine, just slow" from "something is actually wrong."
 
-## Validation
-
-The pipeline was first built and run end-to-end on fitness subreddits (`Fitness_India`, `gym`, `Gainit`, etc.) across 2024–2026, producing 114/477/772 filtered posts per year with interpretable clusters (e.g. diet/calorie-tracking as the largest topic in all three years). That run validated the collection → clustering → reporting flow before the domain-generalization changes above were made. A career-subreddit run is the next one planned, now that `domain_name` prevents it from merging into the fitness data.
 
 ## Files
 
