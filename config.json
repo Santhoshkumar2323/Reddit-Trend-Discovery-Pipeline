@@ -1,0 +1,31 @@
+{
+  "domain_name": "career",
+  "target_subreddits": [
+    "ExperiencedDevs",
+    "developersIndia",
+    "recruitinghell",
+    "overemployed",
+    "layoffs"
+  ],
+  "scraping_settings": {
+    "time_delay_seconds": 1.5,
+    "target_years": [2024, 2025, 2026]
+  },
+  "filtering_rules": {
+    "min_comments": 25,
+    "min_upvote_ratio": 0.70,
+    "min_character_length": 150
+  },
+  "ai_settings": {
+    "embedding_model": "all-MiniLM-L6-v2",
+    "min_cluster_size": 8,
+    "custom_stopwords": [
+      "https", "http", "com", "www", "reddit", "wiki", "rules", "thread",
+      "post", "daily", "welcome", "questions", "comments", "ask", "removed",
+      "advice", "looking", "know", "just", "like", "ve", "don", "also",
+      "day", "week", "month", "months", "year", "years", "time",
+      "job", "jobs", "work", "working", "worked", "company", "companies",
+      "career", "people", "got", "get", "role", "position"
+    ]
+  }
+}
