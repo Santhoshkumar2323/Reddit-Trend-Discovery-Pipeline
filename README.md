@@ -15,11 +15,11 @@ The pipeline was first built and run end-to-end on fitness subreddits (`Fitness_
 <table>
   <tr>
     <td align="center">
-      <img src="screenshots/dashboard_2026.png" width="360"><br>
+      <img src="screenshots/dashboard_2026.png" width="420"><br>
       <b>Dashboard (2026 Fitness Run)</b>
     </td>
     <td align="center">
-      <img src="screenshots/audit_2024.png" width="300"><br>
+      <img src="screenshots/audit_2024.png" width="400"><br>
       <b>Terminal Audit (2024)</b>
     </td>
   </tr>
@@ -28,11 +28,11 @@ The pipeline was first built and run end-to-end on fitness subreddits (`Fitness_
 
   <tr>
     <td align="center">
-      <img src="screenshots/audit_2025.png" width="300"><br>
+      <img src="screenshots/audit_2025.png" width="400"><br>
       <b>Terminal Audit (2025)</b>
     </td>
     <td align="center">
-      <img src="screenshots/audit_2026.png" width="300"><br>
+      <img src="screenshots/audit_2026.png" width="400"><br>
       <b>Terminal Audit (2026)</b>
     </td>
   </tr>
