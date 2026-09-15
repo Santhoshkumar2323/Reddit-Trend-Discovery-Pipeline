@@ -10,16 +10,34 @@ Clusters posts from any set of subreddits into topics by year, without manual la
 
 The pipeline was first built and run end-to-end on fitness subreddits (`Fitness_India`, `gym`, `Gainit`, etc.) across 2024–2026, producing 114/477/772 filtered posts per year with interpretable clusters (e.g. diet/calorie-tracking as the largest topic in all three years).
 
-![Dashboard topic view — 2026 fitness run](screenshots/dashboard_2026.png)
+## Output
 
+<table>
+  <tr>
+    <td align="center">
+      <img src="screenshots/dashboard_2026.png" width="360"><br>
+      <b>Dashboard (2026 Fitness Run)</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/audit_2024.png" width="300"><br>
+      <b>Terminal Audit (2024)</b>
+    </td>
+  </tr>
+ 
+  <tr><td colspan="2" style="padding: 15px 0;"></td></tr>
 
-Terminal audit output for the same run:
+  <tr>
+    <td align="center">
+      <img src="screenshots/audit_2025.png" width="300"><br>
+      <b>Terminal Audit (2025)</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/audit_2026.png" width="300"><br>
+      <b>Terminal Audit (2026)</b>
+    </td>
+  </tr>
+</table>
 
-![2024 audit](screenshots/audit_2024.png)
-
-![2025 audit](screenshots/audit_2025.png)
-
-![2026 audit](screenshots/audit_2026.png)
 
 A career-subreddit run is the next one planned, now that `domain_name` prevents it from merging into the fitness data.
 
